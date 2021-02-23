@@ -172,7 +172,7 @@ Dai and the associated MCD contracts are deployed on [various testnets](https://
 Change kovan for your prefered chain
 6. `export ETH_KEYSTORE=~/keys` : Define where your keys are store
 7. `export ETH_FROM=<address>` : Set your test account
-8. `export ETH_RPC_URL=<RPC URL>` : Set the URL for a testnet RPC node (Infura or other)
+8. `export ETH_RPC_URL=<RPC URL>` : Set the URL for a testnet RPC node (Infura or other, but notice that Infura does not accept regular transactions that are signed in their side, only raw transactions as mentioned [here](https://community.infura.io/t/node-error-code-32601/808)
 9. `export chainid= $(seth --to-uint256 42)`:  Deploying the contract requires passing the chain id, for use with the permit function. For Kovan, the id is 42.
 10. `dapp create Dai $chainid` : To deploy the contract. If successful, this will return the address of your new contract.
 
