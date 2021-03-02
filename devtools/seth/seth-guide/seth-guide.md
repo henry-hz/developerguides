@@ -166,6 +166,9 @@ Now don't let this fool you. Seth queries contract data in a low level manner, a
 
 `$ seth --to-dec $(seth call $BAT 'decimals()')`
 
+or using a pipe style:
+`$ seth call $BAT 'decimals()') | seth --to-dec`
+
 The output is:
 
 `18`
